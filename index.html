@@ -1,0 +1,22 @@
+<html>
+    <head><u><b>prototype property</b></u>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+         function Person(fname,lname)
+        {
+            this.fname=fname;
+            this.lname=lname;
+
+        }
+        Person.prototype.name=function()
+        {
+            return this.fname+""+this.lname;
+        }
+        const myobj=new Person("vinod","kumar")
+        document.getElementById("demo").innerHTML=myobj.name();
+        </script>
+         </body>
+         </html>
